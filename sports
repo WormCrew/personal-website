@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stream1 - Blacktie Streams  </title>
+    <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+</head>
+<body>
+    <div id="player"></div>
+    <script>
+        var player = new Clappr.Player({source: "http://1bc1124a5b5a4f5182b0a3118a4301ca.azureedge.net/a121df95-033f-443f-be3e-cf2bd2530c47/9045d672-aced-465b-b357-b18000336909.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player"});
+    </script>
+        
+</body>
+</html>
