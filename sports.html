@@ -2,14 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Live football streams</title>
+    <title>Live Sports Streams</title>
     <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<style>
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+</style>
 </head>
 <body>
-    <div id="player"></div>
-    <script>
-        var player = new Clappr.Player({source: "http://1bc1124a5b5a4f5182b0a3118a4301ca.azureedge.net/a121df95-033f-443f-be3e-cf2bd2530c47/9045d672-aced-465b-b357-b18000336909.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player"});
-    </script>
-        
+    <div class='row'>
+        <div class='column' id="player1"></div>
+        <div class='column' id="player2"></div>
+    </div>
+    <div class="row">
+        <div class='column' id="player3"></div>
+        <div class='column' id="player4"></div>
+    </div>
+
+<script>
+    var player = new Clappr.Player({source: "http://1bc1124a5b5a4f5182b0a3118a4301ca.azureedge.net/a121df95-033f-443f-be3e-cf2bd2530c47/9045d672-aced-465b-b357-b18000336909.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player1"});
+    var player = new Clappr.Player({source: "http://1bc1124a5b5a4f5182b0a3118a4301ca.azureedge.net/efa18919-39d8-4f33-9c61-aa3717539549/a5d4d0ce-ba24-4b7a-89a4-5ab7cc56c5a1.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player2"});
+    var player = new Clappr.Player({source: "http://1bc1124a5b5a4f5182b0a3118a4301ca.azureedge.net/46234485-d5b6-402a-859d-714ac0ed70ef/4cf4cadb-2fcd-4465-8533-8d9c42fc3e69.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player3"});
+    var player = new Clappr.Player({source: "http://35a8dd422a5649b296427bd9f0369919.azureedge.net/fcbe4ebc-fe3c-4b58-af78-a74a4e01b629/bb506295-38ab-4b38-8a6e-c6abfbe74a73.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player4"});
+</script>
+
 </body>
 </html>
