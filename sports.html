@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Live Sports Streams</title>
+    <title>Stream1 - Blacktie Streams  </title>
     <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
 <style>
     .row {
         display: flex;
-    }
+    }  
     .column {
-        flex: 33.33%;
+        flex: 50%;
         padding: 5px;
     }
 </style>
@@ -17,19 +17,28 @@
 <body>
     <div class='row'>
         <div class='column' id="player1"></div>
-        <div class='column' id="player2"></div>
+        <div class='column'></div>
     </div>
-    <div class="row">
-        <div class='column' id="player3"></div>
-        <div class='column' id="player4"></div>
+    <div class='row'>
+        <div class='column'></div>
+        <div class='column'>
+
+        </div>
     </div>
 
+    
 <script>
+    var player = new Clappr.Player({source: "https://mediaaz3-euno.streaming.media.azure.net/574c9be4-4b4c-47f2-a74f-24aba78add16/314e912f-958a-4896-8d3c-0ce2421c2ad1.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player1"});
     var player = new Clappr.Player({source: "http://cff765a9274847338036be4b50796bb8.azureedge.net/904056c5-eeb4-4296-a95c-714a0da1091c/e9f7ae53-0970-49c9-8824-2104239c8ea9.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player2"});
-    var player = new Clappr.Player({source: "http://cff765a9274847338036be4b50796bb8.azureedge.net/51337bba-a2a1-450a-80f9-17a8c7500623/ab6b7156-b311-4936-bd3e-f604f265feeb.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player1"});
     var player = new Clappr.Player({source: "http://1bc1124a5b5a4f5182b0a3118a4301ca.azureedge.net/46234485-d5b6-402a-859d-714ac0ed70ef/4cf4cadb-2fcd-4465-8533-8d9c42fc3e69.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player3"});
+    var player = new Clappr.Player({source: "http://whostreams.net/2cbb1e0c-364c-488c-9799-037f7391e961", parentId: "#player4"});
+    var player = new Clappr.Player({source: "http://35a8dd422a5649b296427bd9f0369919.azureedge.net/fcbe4ebc-fe3c-4b58-af78-a74a4e01b629/bb506295-38ab-4b38-8a6e-c6abfbe74a73.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player4"});
     var player = new Clappr.Player({source: "http://35a8dd422a5649b296427bd9f0369919.azureedge.net/fcbe4ebc-fe3c-4b58-af78-a74a4e01b629/bb506295-38ab-4b38-8a6e-c6abfbe74a73.ism/manifest(video,format=m3u8-aapl-v3,audiotrack=audio).m3u8", parentId: "#player4"});
 </script>
+
+
+
+<video preload="metadata" class="videoplayer_media_provider" tabindex="-1" aria-hidden="true" src="blob:https://vk.com/10253a6e-0c07-4cab-8543-e3e1fd3fe9c0"></video>
 
 </body>
 </html>
